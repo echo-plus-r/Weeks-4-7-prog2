@@ -7,6 +7,8 @@ public class Peakaboo : MonoBehaviour
     public SpriteRenderer sr;
     public Peakaboo pb;
     public GameObject go;
+    public AudioSource auso;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,18 @@ public class Peakaboo : MonoBehaviour
             //sr.enabled = true;
             //pb.enabled = true;
             go.SetActive(true);
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            
+            if (auso.isPlaying == false) 
+            {
+                //auso.Play();
+                auso.PlayOneShot(clip);
+
+            }
+            
+            
         }
     }
 }
