@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class PlaytimeSlider : MonoBehaviour
 {
     public AudioSource source;
-    public AudioClip clip;
+    //public AudioClip amen;
+    AudioClip clip;
     Slider slide;
     void Start()
     {
         slide = GetComponent<Slider>();
+        clip = source.clip;
     }
 
     // Update is called once per frame
