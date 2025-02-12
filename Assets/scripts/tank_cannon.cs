@@ -7,10 +7,11 @@ using UnityEngine.UIElements;
 public class tank_cannon : MonoBehaviour
 {
     public GameObject bullet;
+    AudioSource source;
     // Start is called before the first frame update
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class tank_cannon : MonoBehaviour
         if (Input.GetMouseButtonUp(0)) 
         {
             Instantiate(bullet, transform.position, transform.rotation);
+            source.Play();
         }
 
         transform.eulerAngles = rot;
