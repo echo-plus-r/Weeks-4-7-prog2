@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playerw7 : MonoBehaviour
 {
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +17,13 @@ public class playerw7 : MonoBehaviour
         Vector2 pos = transform.position;
         if (Input.GetAxis("Horizontal") > 0) 
         {
-            pos.x += 1 * Time.deltaTime;
+            pos.x += speed * Time.deltaTime;
         }
         if (Input.GetAxis("Horizontal") < 0) 
         {
-            pos.x -= 1 * Time.deltaTime;
+            pos.x -= speed * Time.deltaTime;
         }
+
         transform.position = pos;
     }
 }
