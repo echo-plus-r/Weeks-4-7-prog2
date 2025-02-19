@@ -19,6 +19,12 @@ public class hazardw7 : MonoBehaviour
         Vector2 pos = transform.position;
         //throw all the collision stuff here or something idk
 
+        // this is the worst way to do colisions ever. if you are an aspiring game developer/programer, please don't do this.
+        if (pos.x + 0.5f >= player.transform.position.x && pos.x - 0.5f <= player.transform.position.x) 
+        {
+            Debug.Log("player has touched a hazard");
+        }
+
         if (follow == true) 
         {
             if (pos.x > player.transform.position.x) 
