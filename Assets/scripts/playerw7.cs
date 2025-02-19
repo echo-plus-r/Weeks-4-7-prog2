@@ -13,6 +13,15 @@ public class playerw7 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Vector2 pos = transform.position;
+        if (Input.GetAxis("Horizontal") > 0) 
+        {
+            pos.x += 1 * Time.deltaTime;
+        }
+        if (Input.GetAxis("Horizontal") < 0) 
+        {
+            pos.x -= 1 * Time.deltaTime;
+        }
+        transform.position = pos;
     }
 }
