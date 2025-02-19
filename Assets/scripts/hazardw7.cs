@@ -7,6 +7,7 @@ public class hazardw7 : MonoBehaviour
     public GameObject player;
     public bool follow;
     public bool move;
+    public bool loot;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,14 @@ public class hazardw7 : MonoBehaviour
         // this is the worst way to do colisions ever. if you are an aspiring game developer/programer, please don't do this.
         if (pos.x + 0.5f >= player.transform.position.x && pos.x - 0.5f <= player.transform.position.x) 
         {
-            Debug.Log("player has touched a hazard");
+            if (loot == true)
+            {
+                Debug.Log("player has grabbed loot");
+            }
+            else
+            {
+                Debug.Log("player has touched a hazard");
+            }
         }
 
         if (follow == true) 
