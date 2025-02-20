@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,11 +8,17 @@ using UnityEngine.UI;
 public class plant_act : MonoBehaviour
 {
     public Vector2 siz;
+    public Sprite[] sprites;
+    SpriteRenderer sr;
+    public TMP_Dropdown dropdown;
     //public Vector2 test;
     //public Slider slider;
     // Start is called before the first frame update
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
+
+        sr.sprite = sprites[dropdown.value];
         //Vector2 sca = transform.localScale;
         //slider = GetComponent<Slider>();
 

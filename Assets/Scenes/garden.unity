@@ -122,6 +122,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &20710965
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2558389563617494364, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: dropdown
+      value: 
+      objectReference: {fileID: 1143570307}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.1491
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5791373
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692731143780843691, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: m_Name
+      value: secret_plant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
 --- !u!1 &70729049
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +273,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -2558389563617494364, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      - m_Target: {fileID: 186852630}
         m_TargetAssemblyTypeName: plant_act, Assembly-CSharp
         m_MethodName: size
         m_Mode: 0
@@ -224,6 +285,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &186852629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3692731143780843691, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+  m_PrefabInstance: {fileID: 20710965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &186852630 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -2558389563617494364, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+  m_PrefabInstance: {fileID: 20710965}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186852629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517d31f7dc16d84419cfcb854ba78541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &284151036
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,15 +923,27 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: banana
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: bread
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: carrot
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3692731143780843691, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1143570308
 MonoBehaviour:
@@ -1464,7 +1553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option A
+  m_text: banana
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1919,7 +2008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8579633bc73a02645a248926987caa9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plant: {fileID: 3692731143780843691, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+  plant: {fileID: 186852629}
 --- !u!1 &2095005980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,3 +2084,4 @@ SceneRoots:
   - {fileID: 1949839690}
   - {fileID: 1773078117}
   - {fileID: 2095005983}
+  - {fileID: 20710965}

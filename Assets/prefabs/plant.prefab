@@ -97,4 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 517d31f7dc16d84419cfcb854ba78541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  siz: {x: 1, y: 1}
+  sprites:
+  - {fileID: -887230987, guid: 529af4bdebfb57844ac40648c60dbc05, type: 3}
+  - {fileID: 238154688, guid: 529af4bdebfb57844ac40648c60dbc05, type: 3}
+  - {fileID: 1491619036, guid: 529af4bdebfb57844ac40648c60dbc05, type: 3}
