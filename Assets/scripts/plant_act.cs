@@ -7,25 +7,21 @@ using UnityEngine.UI;
 
 public class plant_act : MonoBehaviour
 {
-    public Vector2 siz;
-    public Sprite[] sprites;
-    SpriteRenderer sr;
-    public TMP_Dropdown dropdown;
-    //public Vector2 test;
-    //public Slider slider;
+    public Vector2 siz; // used to hold the plant's size
+    public Sprite[] sprites; // used to hold sprites the plant can be
+    SpriteRenderer sr; // hods the object's sprite renderer
+    public TMP_Dropdown dropdown; // holds related dropdown ui element
+
     // Start is called before the first frame update
     void Start()
     {
+        // getting the sprite rednerer component
         sr = GetComponent<SpriteRenderer>();
 
+        // setting the sprite as a dropdown value
         sr.sprite = sprites[dropdown.value];
-        //Vector2 sca = transform.localScale;
-        //slider = GetComponent<Slider>();
 
-        //sca.x = test.x;
-        //sca.y = test.y;
-
-        //transform.localScale = sca;
+        // setting size as the size from a slider
         transform.localScale = siz;
     }
 
@@ -34,10 +30,10 @@ public class plant_act : MonoBehaviour
     {
         
     }
+
+    // size is called by a slider.
     public void size(float x) 
     { 
-        //test.x = x;
-        //test.y = x;
         siz.x = x;
         siz.y = x;
     }

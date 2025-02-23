@@ -134,6 +134,26 @@ PrefabInstance:
       propertyPath: dropdown
       value: 
       objectReference: {fileID: 1143570307}
+    - target: {fileID: -2558389563617494364, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -2558389563617494364, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 67df464e720cc04419410551aeca6a0c, type: 3}
+    - target: {fileID: -2558389563617494364, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 108161ebc06146a4691363651c12ce3d, type: 3}
+    - target: {fileID: -2558389563617494364, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 603a48576d435e94aa68828793e61b52, type: 3}
+    - target: {fileID: -2558389563617494364, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 064b2dce2f43a9c4986f520fb9e7efa8, type: 3}
     - target: {fileID: 1935009795413607359, guid: 667d2aeba5c12044b8b97bdec2f5eea6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.1491
@@ -923,12 +943,14 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: banana
-      m_Image: {fileID: 0}
-    - m_Text: bread
-      m_Image: {fileID: 0}
-    - m_Text: carrot
-      m_Image: {fileID: 0}
+    - m_Text: Blue Flower
+      m_Image: {fileID: 21300000, guid: 67df464e720cc04419410551aeca6a0c, type: 3}
+    - m_Text: Blue Egg?
+      m_Image: {fileID: 21300000, guid: 108161ebc06146a4691363651c12ce3d, type: 3}
+    - m_Text: Purple Tulip
+      m_Image: {fileID: 21300000, guid: 603a48576d435e94aa68828793e61b52, type: 3}
+    - m_Text: Carrot
+      m_Image: {fileID: 21300000, guid: 064b2dce2f43a9c4986f520fb9e7efa8, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1553,7 +1575,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: banana
+  m_text: Blue Flower
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1940,7 +1962,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.2023994, g: 0.81886786, b: 0.21361423, a: 0}
+  m_BackGroundColor: {r: 0.13040228, g: 0.6226415, b: 0.13667288, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
