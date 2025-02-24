@@ -16,7 +16,10 @@ public class spawner : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0)) 
         {
+            // getting the mouse position and converting it into a world position
             Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            // spawning a plant at the mouse position
             Instantiate(plant, mousepos, Quaternion.identity);
         }
     }
